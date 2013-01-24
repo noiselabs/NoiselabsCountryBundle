@@ -1,0 +1,36 @@
+{
+    "name": "noiselabs/country-bundle",
+    "type": "symfony-bundle",
+    "description": "List of all countries with names and ISO 3166-1 codes in all languages and data formats",
+    "keywords": ["country", "symfony", "noiselabs"],
+    "homepage": "https://github.com/noiselabs/NoiselabsCountryBundle",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Vítor Brandão",
+            "email": "noisebleed@noiselabs.org",
+            "homepage": "http://blog.noiselabs.org"
+        },
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/noiselabs/NoiselabsCountryBundle/contributors"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/noiselabs",
+        "issues": "https://github.com/noiselabs/NoiselabsCountryBundle/issues"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "umpirsky/country-list": "dev-master"
+
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": { "NoiseLabs\\Bundle\\NoiselabsCountryBundle": "" }
+    },
+    "target-dir": "NoiseLabs/Bundle/NoiselabsCountryBundle",
+    "minimum-stability": "dev"
+}
