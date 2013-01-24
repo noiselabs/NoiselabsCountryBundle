@@ -31,6 +31,6 @@
     "autoload": {
         "psr-0": { "NoiseLabs\\Bundle\\CountryBundle": "" }
     },
-    "target-dir": "NoiseLabs/Bundle/NoiselabsCountryBundle",
+    "target-dir": "NoiseLabs/Bundle/CountryBundle",
     "minimum-stability": "dev"
 }
