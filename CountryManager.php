@@ -127,6 +127,28 @@ class CountryManager
             $this->dataCache[$locale][$source] = require_once $file;
         }
 
-        return $this->dataCache[$locale][$source];
+        return $this->sortData($locale, $this->dataCache[$locale][$source]);
+    }
+
+    /**
+     * Sorts the data array for a given locale, using the locale translations.
+     * It is UTF-8 aware if the Collator class is available (requires the intl
+     * extension).
+     *
+     * @param string $locale The locale whose collation rules should be used.
+     * @param array  $data   Array of strings to sort.
+     *
+     * @return array The $data array, sorted.
+     */
+    protected function sortData($locale, $data)
+    {
+        if (class_exists('Collator')) {
+            $collator = new \Collator($locale);
+            $collator->asort($data);
+        } else {
+            asort($data);
+        }
+
+        return $data;
     }
 }
