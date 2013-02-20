@@ -20,7 +20,7 @@
  *
  * @category    NoiseLabs
  * @package     CountryBundle
- * @copyright   (C) 2013 Vítor Brandão <noisebleed@noiselabs.org>
+ * @copyright   (C) 2013 Vítor Brandão <vitor@noiselabs.org>
  * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL-3
  * @link        http://www.noiselabs.org
  */
@@ -30,7 +30,7 @@ namespace NoiseLabs\Bundle\CountryBundle;
 /**
  * Country Manager.
  *
- * @author Vítor Brandão <noisebleed@noiselabs.org>
+ * @author Vítor Brandão <vitor@noiselabs.org>
  */
 class CountryManager
 {
